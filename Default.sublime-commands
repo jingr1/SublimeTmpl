@@ -22,5 +22,13 @@
     {
         "caption": "Tmpl: Create ruby", "command": "sublime_tmpl",
         "args": {"type": "ruby"}
+    },
+    {
+      "caption": "Tmpl: Create c file", "command": "sublime_tmpl",
+      "args": {"type": "c"}
+    },
+    {
+      "caption": "Tmpl: Create h file", "command": "sublime_tmpl",
+      "args": {"type": "h"}
     }
 ]

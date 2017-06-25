@@ -104,6 +104,14 @@
         "syntax": "Packages/YAML/YAML.tmLanguage",
         "extension": "yaml"
     },
+    "source": {
+        "syntax": "Packages/C/C.tmLanguage",
+        "extension": "c"
+    },
+    "header": {
+        "syntax": "Packages/C/H.tmLanguage",
+        "extension": "h"
+    },
     "disable_keymap_actions": false, // "all"; "html,css"
     "enable_project_variables": false, // ${project_base_name}, ${project_path} and ${platform}
     "enable_file_variables_on_save": false, // ${saved_filename}, ${saved_filepath} on save file
@@ -111,6 +119,7 @@
     "attr": {
         "author": "Your Name",
         "email": "you@example.org",
-        "link": "http://example.org"
+        "link": "http://example.org",
+        "company": "Your company"
     }
 }
