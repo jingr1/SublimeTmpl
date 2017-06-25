@@ -58,6 +58,24 @@
                     "paths": [],
                 }
             },
+            {
+                "id": "c",
+                "caption": "c",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "c",
+                    "paths": [],
+                }
+            },
+            {
+                "id": "h",
+                "caption": "h",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "h",
+                    "paths": [],
+                }
+            },
             {"caption": "-"},
             {
                 "id": "menu",
