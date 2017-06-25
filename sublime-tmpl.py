@@ -201,8 +201,11 @@ class SublimeTmplEventListener(sublime_plugin.EventListener):
         if settings.get('enable_file_variables_on_save', False):
             filepath = view.file_name()
             filename = os.path.basename(filepath)
+            FileNameWithoutExtension = os.path.splitext(filename)[0]
+            FileNameWithoutExtension = FileNameWithoutExtension.upper()
             view.run_command('sublime_tmpl_replace', {'old': '${saved_filepath}', 'new': filepath})
             view.run_command('sublime_tmpl_replace', {'old': '${saved_filename}', 'new': filename})
+            view.run_command('sublime_tmpl_replace', {'old': '${saved_filenamewithoutext}', 'new': FileNameWithoutExtension})
             del self.unsaved_ids[view.id()]
 
 def plugin_loaded():  # for ST3 >= 3016
